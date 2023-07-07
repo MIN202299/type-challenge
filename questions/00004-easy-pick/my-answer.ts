@@ -46,6 +46,10 @@ const todo2: TodoPreview2 = {
   description: '123'
 }
 
+type Test1 = Pick<number, 'toFixed' | 'toPrecision'>
+
+type Test2 = MyPick<number, 'toFixed' | 'toExponential'>
+
 // keyof in 的用法
 
 // keyof: 取interface的键后保存为联合类型
