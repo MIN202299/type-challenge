@@ -37,13 +37,13 @@ const todo: Readonly<Todo> = {
   description: 'foobar',
 }
 
-todo.title = 'hey'
-todo.description = 'ddd'
+// todo.title = 'hey'
+// todo.description = 'ddd'
 
 const todo2: MyReadonly<Todo> = {
   title: 'hello',
   description: 'beautiful world',
 }
 
-todo2.description = 'world'
-todo2.description = 'fff'
+// todo2.description = 'world' // Expect Error cannot assign to a read-only property
+// todo2.description = 'fff' // Expect Error cannot assign to a read-only property
